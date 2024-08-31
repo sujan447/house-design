@@ -48,43 +48,15 @@
 
 <body class="font-family">
   <!-- header section -->
-  <header class=" container max-auto">
+  <header class=" container mx-auto ">
     <!-- nav section -->
-    <nav class="lg:px-12">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-              
-            </ul>
-          </div>
-                  <i class="fa-solid fa-arrow-right border p-2 rounded-full bg-deep-primary -rotate-45"></i>
-                    <a class="btn btn-ghost text-3xl font-bold">Rinterio</a>
-                
-                  
-                </div>
-                <div class="navbar-center hidden lg:flex">
+    <nav >
+      <div class="navbar bg-base-100 ">
+        <div class="navbar-start p-6">
+          <i class="fa-solid fa-arrow-right border p-2 rounded-full bg-deep-primary -rotate-45"></i>
+          <a class="btn btn-ghost text-3xl font-bold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
                     <li class="hover:font-bold"><a>Home</a></li>
                     <li class="hover:font-bold"><a>Services</a></li>
@@ -92,17 +64,43 @@
                     <li class="hover:font-bold"><a>Blogs</a></li>
                     <li class="hover:font-bold "><a>Contact Us</a></li>
                   </ul>
-                </div>
-                <div class="navbar-end p-4 md:gap-6 ">
+        </div>
+        <div class="navbar-end p-4 md:gap-6 hidden lg:flex ">
                   <i class="fa-solid fa-magnifying-glass border text-xl p-2 rounded-full bg-white text-slate-500"></i>
                   <i class="fa-solid fa-cart-shopping text-xl p-2 border rounded-full bg-white text-slate-500"></i>
                   <a class=" btn bg-deep-primary text-xl font-bold rounded-3xl ">Book Consult  <i class="fa-solid fa-arrow-right border p-2 rounded-full bg-black text-white -rotate-45"></i></a>
-                </div>
-              </div>
-         </nav>
+        </div>
+        <div class="dropdown lg:hidden">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                    
+                  </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- banner section -->
-    <section class="mt-12 px-6">
+    <section class="mt-12 px-6 ">
       <div class=" lg: px-6 lg:flex items-center justify-center">
         <img src="./assets/banner.png" alt="">
       </div>
@@ -209,9 +207,9 @@
         <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
           sleek metal accents.</p>
       </div>
-      <div class=" grid  grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 mt-12 gap-6">
-        <div class="bg-white border p-6 rounded-xl lg:flex gap-6 lg:col-span-3 ">
-          <img src="./assets/img1.png" alt="">
+      <div class=" grid  grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 mt-12 gap-6">
+        <div class="bg-white border p-6 rounded-xl lg:flex gap-6 lg:col-span-9  ">
+          <img class="" src="./assets/img1.png" alt="">
           <div class="space-y-4 mt-4 ">
             <h4 class="text-2xl font-semibold ">Commercial</h4>
             <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its
@@ -220,14 +218,14 @@
                 class="fa-solid fa-arrow-right border p-2 rounded-full bg-deep-primary -rotate-45"></i></h4>
           </div>
         </div>
-        <div class=" bg-white border rounded-xl p-6 mx-auto">
-          <img  src="./assets/img2.png" alt="">
+        <div class=" bg-white border rounded-xl p-6 mx-auto lg:col-span-3  ">
+          <img class="w-full h-full" src="./assets/img2.png" alt="">
         </div>
-        <div class="bg-white border rounded-xl p-6 mx-auto w-full ">
-          <img class="w-full" src="./assets/img3.png" alt="">
+        <div class="bg-white border rounded-xl p-6 mx-auto lg:col-span-2 w-full">
+          <img class="w-full h-full" src="./assets/img3.png" alt="">
         </div>
-        <div class="bg-white border p-6 rounded-xl lg:flex lg:col-span-2 gap-6  ">
-          <img src="./assets/img4.png" alt="">
+        <div class="bg-white border p-6 rounded-xl lg:flex lg:col-span-8 gap-6  ">
+          <img class="" src="./assets/img4.png" alt="">
           <div class="space-y-4 mt-4 ">
             <h4 class="text-2xl font-semibold ">Commercial</h4>
             <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its
@@ -236,11 +234,45 @@
                 class="fa-solid fa-arrow-right border p-2 rounded-full bg-deep-primary -rotate-45"></i></h4>
           </div>
         </div>
-       <div class="bg-white border rounded-xl p-6 mx-auto w-full">
-          <img class="w-full" src="./assets/img5.png" alt="">
+       <div class="bg-white border rounded-xl p-6 mx-auto lg:col-span-2 w-full">
+          <img class="w-full h-full" src="./assets/img5.png" alt="">
         </div>
       </div>
     </section>
+
+    <!-- extra faq section -->
+     <section class="mt-12 container mx-auto p-6">
+      <div class="space-y-4 text-center ">
+        <button class="btn bg-[#d6f7b0] rounded-3xl"><i class="fa-solid fa-arrow-right"></i>FAQ Housing Section</button>
+        <h2 class=" text-3xl lg:text-4xl font-bold">Frequently Asked Question</h2>
+        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+          sleek metal accents.</p>
+      </div>
+      <div class=" border rounded-xl p-6 bg-white mt-10">
+        <div class="collapse collapse-arrow bg-base-200 mt-6 ">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium ">What is this project?</div>
+          <div class="collapse-content">
+            <p>This is our housing project.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mt-6">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">How this projects helps people?</div>
+          <div class="collapse-content">
+            <p>We provide the proper information about their requirement housing design.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mt-6">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">How does it works?</div>
+          <div class="collapse-content">
+            <p>It works like a house tutor and guidance to build your dream house</p>
+          </div>
+        </div>
+      </div>
+
+     </section>
 
       <!-- form section -->
        <section class="mt-12 bg-pic p-6 lg:p-12 ">
